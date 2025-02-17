@@ -13,24 +13,6 @@ compile({
 })
     .then(() => {
         console.log('compile successfully!');
-
-        return new Promise((resolve, reject) => {
-            glob('./geoext*', null, (error, files) => {
-                if (error) {
-                    reject(error);
-                    return;
-                }
-
-                resolve(files);
-            });
-        });
-    })
-    .then((files) => {
-        files.forEach((file) => {
-            const distPath = `./dist/${file}`;
-
-            fs.renameSync(file, distPath);
-        });
     })
     .catch((error) => {
         console.error(error);

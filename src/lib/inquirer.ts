@@ -10,7 +10,7 @@ export const askImageFolderPath = async (): Promise<string> => {
         if (answer.endsWith('"') || answer.endsWith("'")) {
             answer = answer.slice(0, -1);
         }
-        return answer;
+        return answer.trim();
     });
 };
 

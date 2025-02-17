@@ -2,3 +2,4 @@ node-cli-*.tgz
 bin/build
 bin/src
 node_modules
+geoext
