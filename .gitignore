@@ -1,5 +1,4 @@
 node-cli-*.tgz
-bin/build
-bin/src
+bin
 node_modules
 geoext
