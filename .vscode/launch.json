@@ -1,0 +1,12 @@
+{
+  "configurations": [
+    {
+      "name": "Launch Program",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceRoot}",
+      "program": "${workspaceRoot}/bin/index.js",
+      "sourceMaps": true,
+    }
+  ]
+}

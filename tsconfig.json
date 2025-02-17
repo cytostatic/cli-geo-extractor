@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+        "module": "es6",
+        "noImplicitAny": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "declaration": true,
+        "moduleResolution": "node",
+        "outDir": "./bin",
+        "rootDir": ".",
+        "allowSyntheticDefaultImports": true,
+        "target": "es6",
+        "allowJs": true,
+        "resolveJsonModule": true,
+        "lib": ["es2021"]
+    },
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "files": [
+        "src/index.ts"
+    ]
+}
