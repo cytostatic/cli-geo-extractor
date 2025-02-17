@@ -10,7 +10,8 @@
         "test": "node bin/index.js",
         "start": "webpack --mode=development --watch",
         "build": "webpack --mode=production",
-        "deploy": "webpack --mode=production && npm pack"
+        "deploy": "webpack --mode=production && npm pack",
+        "deploy:pkg": "webpack --mode=production && node ./build/build.js"
     },
     "author": {
         "name": "Cytostatic",
@@ -38,10 +39,14 @@
         "chalk": "^5.4.1",
         "clear": "^0.1.0",
         "commander": "^13.1.0",
+        "dateformat": "^5.0.3",
+        "exifreader": "^4.26.1",
         "figlet": "^1.8.0",
         "fs-extra": "^11.3.0",
         "inquirer": "^12.4.2",
+        "json-as-xlsx": "^2.5.6",
         "lodash": "^4.17.21",
+        "nexe": "^4.0.0-rc.6",
         "slash": "^5.1.0"
     }
 }
