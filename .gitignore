@@ -2,3 +2,4 @@ node-cli-*.tgz
 bin
 node_modules
 geoext
+sea-prep.blob
