@@ -10,8 +10,7 @@
         "test": "node bin/index.js",
         "start": "webpack --mode=development --watch",
         "build": "webpack --mode=production",
-        "deploy": "webpack --mode=production && npm pack",
-        "deploy:pkg": "webpack --mode=production && ./build.sh"
+        "deploy": "webpack --mode=production && ./build.sh"
     },
     "author": {
         "name": "Cytostatic",

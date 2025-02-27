@@ -12,6 +12,8 @@ const columns = [
     { label: 'Längengrad', value: 'lon' },
 ];
 
+const supportedExtensions = ['.jpeg', '.jpg', '.heic'];
+
 const data = [];
 export const extractToExcel = async (paths: string[]) => {
     for (const fdPath of paths) {
@@ -28,7 +30,7 @@ export const extractToExcel = async (paths: string[]) => {
         const files = readdirSync(fdPath);
 
         for (const file of files) {
-            if (extname(file) !== '.jpeg') {
+            if (!supportedExtensions.includes(extname(file).toLowerCase())) {
                 continue;
             }
             const filePath = join(fdPath, file);
